@@ -3,12 +3,17 @@
 
     <item
         android:id="@+id/action_pt_br"
-        android:title="@string/action_pt_br"
+        android:title="Voz POrtugues(BR)"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_en_us"
-        android:title="@string/action_en_us"
+        android:title="Voz Inglês"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_spa_esp"
+        android:title="Voz Espanhol"
         app:showAsAction="never" />
 
     <item

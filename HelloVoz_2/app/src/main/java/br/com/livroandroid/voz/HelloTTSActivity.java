@@ -49,12 +49,19 @@ public class HelloTTSActivity extends BaseActivity implements TextToSpeech.OnIni
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
+        // Ao escolher o retorno da voz em português
         if (id == R.id.action_pt_br) {
             Locale locale = new Locale("pt","BR");
             tts.setLanguage(locale);
             return true;
+            // Ao escolher o retorno da voz em Inglês
         } else if(id == R.id.action_en_us) {
             Locale locale = Locale.ENGLISH;
+            tts.setLanguage(locale);
+            return true;
+            // Ao escolher o retorno da voz em Espanhol
+        }else if(id == R.id.action_spa_esp) {
+            Locale locale = new Locale("spa", "ESP");
             tts.setLanguage(locale);
             return true;
         }else if (id == R.id.action_check_data) {
