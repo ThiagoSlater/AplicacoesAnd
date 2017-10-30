@@ -62,6 +62,13 @@ public class HelloTTSTest2 {
                 allOf(withId(R.id.tMsg), withText("Olá, bom dia."), isDisplayed()));
         appCompatEditText1.perform(replaceText("Hi, good morning!"), closeSoftKeyboard());
 
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
         openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
 
         ViewInteraction appCompatTextView3 = onView(
@@ -79,6 +86,12 @@ public class HelloTTSTest2 {
         ViewInteraction appCompatEditText3 = onView(
                 allOf(withId(R.id.tMsg), withText("Hi, good morning!"), isDisplayed()));
         appCompatEditText3.perform(replaceText("Ola, buenos dias!"), closeSoftKeyboard());
+
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
 

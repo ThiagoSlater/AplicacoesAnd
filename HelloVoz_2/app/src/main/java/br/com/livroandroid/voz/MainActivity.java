@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+
 /**
  * Exemplo de voz
  *
@@ -74,6 +75,8 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
 
         }
     }
+
+    FirebaseCrash.report(new Exception("My first Android non-fatal error"));
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
