@@ -30,8 +30,8 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
 
         String[] items = new String[]{
                 "Falar um texto",
-                "Recognizer Intent",
-                "Recognizer Listener",
+                //"Recognizer Intent",
+                //"Recognizer Listener",
                 "Sair"};
 
         ListView listView = (ListView) findViewById(R.id.listView);
@@ -76,7 +76,7 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         }
     }
 
-    FirebaseCrash.report(new Exception("My first Android non-fatal error"));
+    //FirebaseCrash.report(new Exception("My first Android non-fatal error"));
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

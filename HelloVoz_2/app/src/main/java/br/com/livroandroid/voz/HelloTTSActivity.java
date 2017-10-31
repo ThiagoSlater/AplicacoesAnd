@@ -24,7 +24,8 @@ import livroandroid.lib.utils.SDCardUtils;
 /**
  * Mostra como fazer o Android falar com TTS Text-To-Speech.
  */
-public class HelloTTSActivity extends BaseActivity implements TextToSpeech.OnInitListener {
+public class
+HelloTTSActivity extends BaseActivity implements TextToSpeech.OnInitListener {
 
     private static final String TAG = "livroandroid";
     private static final int ACTION_CHECK_DATA_CODE = 1;
