@@ -21,8 +21,8 @@
         android:title="@string/action_check_data"
         app:showAsAction="never" />
 
-    <item
+    <!---<item
         android:id="@+id/action_install_data"
         android:title="@string/action_install_data"
-        app:showAsAction="never" />
+        app:showAsAction="never" />-->
 </menu>

@@ -85,12 +85,12 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
                 case 0:
                     startActivity(new Intent(this, HelloTTSActivity.class));
                     break;
-                case 1:
+                /*case 1:
                     startActivity(new Intent(this, HelloRecognizerIntentActivity.class));
                     break;
                 case 2:
                     startActivity(new Intent(this, HelloSpeechRecognizerActivity.class));
-                    break;
+                    break;*/
                 default:
                     finish();
                     break;

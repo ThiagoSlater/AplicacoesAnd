@@ -61,23 +61,24 @@ HelloTTSActivity extends BaseActivity implements TextToSpeech.OnInitListener {
             tts.setLanguage(locale);
             return true;
             // Ao escolher o retorno da voz em Espanhol
-        }else if(id == R.id.action_spa_esp) {
+        }/*else if(id == R.id.action_spa_esp) {
             Locale locale = new Locale("spa", "ESP");
             tts.setLanguage(locale);
-            return true;
-        }else if (id == R.id.action_check_data) {
+            return true;*/
+       // }
+        else if (id == R.id.action_check_data) {
             // Verifica se o pacote de dados do TTS está instalado
             Intent checkIntent = new Intent();
             checkIntent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
             startActivityForResult(checkIntent, ACTION_CHECK_DATA_CODE);
             return true;
-        } else if(id == R.id.action_install_data) {
+        } /*else if(id == R.id.action_install_data) {
             // Instala o pacote de dados
             Intent installIntent = new Intent();
             installIntent.setAction(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA);
             startActivity(installIntent);
             return true;
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
     }

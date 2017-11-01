@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Falar o Texto" />
 
-    <Button
+    <!--<Button
         android:onClick="onClickSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:onClick="onClickFalarArquivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Falar do Arquivo" />
+        android:text="Falar do Arquivo" />-->
 
 
 </LinearLayout>
